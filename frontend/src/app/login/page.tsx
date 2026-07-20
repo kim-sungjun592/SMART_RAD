@@ -78,20 +78,19 @@ export default function LoginPage() {
     }
   }, [user, loading, router]);
 
-<<<<<<< HEAD
-=======
   if (loading) {
     return (
       <div className="flex min-h-screen w-full items-center justify-center bg-[#1a2133] text-white font-sans">
         <div className="flex flex-col items-center gap-4">
           <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-gray-400 text-sm">인증 상태를 확인하고 있습니다...</p>
+          <p className="text-gray-400 text-sm">
+            인증 상태를 확인하고 있습니다...
+          </p>
         </div>
       </div>
     );
   }
 
->>>>>>> upstream/main
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setError(null);
